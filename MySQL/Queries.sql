@@ -75,3 +75,15 @@ FROM
 SELECT users.name AS user, products.name AS favorite FROM users LEFT JOIN products ON users.favorite_product = products.id
 
 -------------------------------------------------------------------------------------------------------
+
+SELECT * FROM  users;
+SELECT * FROM  products;
+
+SELECT 
+	users.name AS user,
+	products.name AS favorite
+FROM 
+	users RIGHT JOIN 
+    products ON users.favorite_product = products.id
+    
+SELECT users.name AS user, products.name AS favorite FROM users RIGHT JOIN products ON users.favorite_product = products.id
